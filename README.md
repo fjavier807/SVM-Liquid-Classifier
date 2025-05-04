@@ -47,7 +47,7 @@ En este informe se presentan los resultados obtenidos de la implementación y ev
 
 ### Matriz de Confusión - Árbol de Decisión  
 Análisis: Excelente clasificación, con solo 3 falsos positivos y ningún falso negativo.  
-![Ilustración 1](Imagenes/matriz_confusion_arbol.png)
+![Ilustración 1](Matriz de confusion-Arbol de decision.png)
 
 ### Frontera de Decisión - Árbol de Decisión  
 Análisis: Separación clara, aunque con algunas zonas de solapamiento.  
