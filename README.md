@@ -1,128 +1,107 @@
-# 🔬 Clasificación Binaria de Señales: Aceite vs Agua a partir de Datos de Sensores
 
-Este repositorio documenta un proyecto de clasificación binaria orientado a identificar de forma precisa señales provenientes de sensores industriales con el propósito de distinguir entre **muestras de agua y aceite**. El trabajo comprende desde el análisis exploratorio de datos hasta la evaluación comparativa de distintos algoritmos de clasificación supervisada.
+# Clasificación Binaria con Sensores de Agua y Aceite
 
----
+## 📄 Resumen del Proyecto
 
-## 📑 Índice
-- 📂 [Descripción y Estructura del Proyecto](#descripción-y-estructura-del-proyecto)
-- 🔍 [Análisis Exploratorio de Datos (EDA)](#análisis-exploratorio-de-datos-eda)
-- 📝 [Descripción de Variables y Clases](#descripción-de-variables-y-clases)
-- 📝 [Matriz de Correlación](#matriz-de-correlación)
-- 📝 [Eliminación de Variables Irrelevantes](#eliminación-de-variables-irrelevantes)
-- ⚙️ [Preprocesamiento](#preprocesamiento)
-  - 🧹 Tratamiento de valores nulos
-  - 🔠 Codificación de variables categóricas
-  - 📏 Escalado de variables numéricas
-  - 🧪 División del dataset en entrenamiento y prueba
-- 🤖 [Implementación de Clasificadores](#implementación-de-clasificadores)
-  - 🌳 Árbol de Decisión
-  - 💻 SVM
-  - 🌲 Random Forest
-- ✅ [Comparación Experimental](#comparación-experimental)
-- 🧑‍💻 [Autores](#autores)
+Este proyecto tiene como objetivo aplicar y comparar modelos de clasificación para detectar condiciones ambientales a partir de sensores de agua y aceite. Se evaluaron tres enfoques:
+
+- Árbol de Decisión
+- Máquinas de Vectores de Soporte (SVM)
+- Regresión Logística
+
+Las métricas empleadas fueron Precisión, Recall, F1-score y Curva ROC.
 
 ---
 
-## 📂 Descripción y Estructura del Proyecto
+## 👨‍🏫 Información General
 
-El dataset utilizado contiene mediciones de sensores industriales cuya señal varía dependiendo del tipo de sustancia (agua o aceite). A partir de estas señales se busca construir un modelo predictivo que logre detectar automáticamente la clase a la que pertenece una muestra.
-
-La estructura del proyecto incluye:
-
----
-
-## 🔍 Análisis Exploratorio de Datos (EDA)
-
-Durante el EDA se generaron gráficas de distribución, boxplots y estadísticas básicas que revelaron la presencia de valores atípicos y variables redundantes. Se observó una distribución ligeramente desbalanceada entre clases.
-
-### 📊 Boxplot de Variables
-![Boxplot Variables](proyecto_clasificacion_binaria/resultados/boxplot_variables.png)
+- **Materia:** Aprendizaje Automático  
+- **Profesora:** Gladys María Villegas Rugel  
+- **Fecha de entrega:** 03/05/2025  
+- **Integrantes:**
+  - María Fernanda Bolaños Escandón
+  - Francisco Javier Estupiñán Andrade
+  - Fernando Xavier Montaño Cárdenas
 
 ---
 
-## 📝 Descripción de Variables y Clases
+## 📊 Metodología
 
-Las variables representan características derivadas de señales sensoriales, tales como amplitud media, desviación estándar y coeficientes de frecuencia.  
-El objetivo es predecir la variable categórica `Clase`, que puede ser:
-- `0`: Agua
-- `1`: Aceite
+### 🔹 Procesamiento de Datos
 
-### 📈 Histograma de Clases
-![Histograma Clases](proyecto_clasificacion_binaria/resultados/histograma_clases.png)
+- Carga del archivo `dataset.csv` (separador: punto y coma).
+- Normalización de las variables.
+- División 80/20 para entrenamiento y prueba.
 
----
+### 🔹 Modelos Utilizados
 
-## 📝 Matriz de Correlación
+- **Árbol de Decisión:** estructura jerárquica para clasificación.
+- **SVM:** busca la mejor frontera de separación no lineal.
+- **Regresión Logística:** frontera de decisión lineal basada en probabilidad.
 
-Se calculó la matriz de correlación para identificar relaciones lineales entre variables y eliminar redundancias que puedan afectar el rendimiento de los modelos.
+### 🔹 Evaluación
 
-![Matriz de Correlación](proyecto_clasificacion_binaria/resultados/matriz_correlacion.png)
-
----
-
-## 📝 Eliminación de Variables Irrelevantes
-
-Con base en el análisis de correlación y la importancia de características se eliminaron variables con varianza baja y redundantes, optimizando así la dimensionalidad del problema.
+- **Métricas:** Precisión, Recall, F1-score, AUC.
+- **Visualizaciones:** Matriz de Confusión, Frontera de Decisión, Curva ROC.
 
 ---
 
-## ⚙️ Preprocesamiento
+## 📈 Resultados
 
-### 🧹 Tratamiento de Valores Nulos
-Se reemplazaron valores faltantes con la media o moda según el tipo de variable.
+### Árbol de Decisión
 
-### 🔠 Codificación de Variables Categóricas
-No se encontraron variables categóricas que requirieran codificación.
+- **Matriz de Confusión**  
+  ![Matriz Árbol](proyecto_clasificacion_binaria/matriz_arbol.png)
 
-### 📏 Escalado de Variables Numéricas
-Se aplicó `StandardScaler` para normalizar las variables numéricas y evitar el sesgo por magnitud.
-
-### 🧪 División en Entrenamiento y Prueba
-El dataset se dividió en 80% entrenamiento y 20% prueba para una evaluación justa.
+- **Frontera de Decisión**  
+  ![Frontera Árbol](proyecto_clasificacion_binaria/frontera_arbol.png)
 
 ---
 
-## 🤖 Implementación de Clasificadores
+### SVM
 
-Se probaron tres modelos base: Árbol de Decisión, Máquina de Vectores de Soporte (SVM) y Bosque Aleatorio (Random Forest).
+- **Matriz de Confusión**  
+  ![Matriz SVM](proyecto_clasificacion_binaria/matriz_svm.png)
 
-### 🌳 Árbol de Decisión
-Modelo interpretable, rápido pero con tendencia a sobreajustarse.
-
-### 💻 SVM
-Modelo robusto en espacios de alta dimensión. Utilizamos un kernel RBF.
-
-### 🌲 Random Forest
-Modelo de ensamblado con buen rendimiento general y reducción de sobreajuste.
+- **Frontera de Decisión**  
+  ![Frontera SVM](proyecto_clasificacion_binaria/frontera_svm.png)
 
 ---
 
-## ✅ Comparación Experimental
+### Regresión Logística
 
-Se utilizó la métrica **ROC AUC** y la matriz de confusión para comparar los resultados. Random Forest mostró el mejor rendimiento general.
+- **Matriz de Confusión**  
+  ![Matriz Regresión](proyecto_clasificacion_binaria/matriz_regresion.png)
 
-### 📉 Curvas ROC
-![Curvas ROC](proyecto_clasificacion_binaria/resultados/curvas_roc.png)
-
-### 🔲 Matrices de Confusión
-![Matrices de Confusión](proyecto_clasificacion_binaria/resultados/matrices_confusion.png)
-
-### 🧪 Importancia de Variables (Random Forest)
-![Importancia Variables](proyecto_clasificacion_binaria/resultados/importancia_variables_rf.png)
+- **Frontera de Decisión**  
+  ![Frontera Regresión](proyecto_clasificacion_binaria/frontera_regresion.png)
 
 ---
 
-## 🧑‍💻 Autores
+### Comparación de Modelos
 
-Este proyecto fue desarrollado por:
+- **F1-Score por Modelo**  
+  ![F1-score](proyecto_clasificacion_binaria/f1score.png)
 
-- **Fernando Montaño**
-- **María Fernanda Bolaños**
-- **Francisco Estupiñán**
+- **Curva ROC - Regresión Logística**  
+  ![ROC](proyecto_clasificacion_binaria/roc_regresion.png)
 
-Proyecto académico — Maestría en Inteligencia Artificial, Universidad Estatal.
+- **Métricas Generales**  
+  ![Métricas](proyecto_clasificacion_binaria/metricas_modelos.png)
 
 ---
+
+## ✅ Conclusiones
+
+- **SVM** mostró el mejor rendimiento general, especialmente con datos no linealmente separables.
+- **Árbol de Decisión** ofreció alto F1-score y es más interpretable.
+- **Regresión Logística** fue adecuada, pero menos eficaz con solapamientos.
+
+> En resumen, se recomienda el modelo **SVM** como el más robusto para este caso de clasificación binaria.
+
+---
+
+## 📂 Estructura del Repositorio
+
 
 
