@@ -47,27 +47,27 @@ En este informe se presentan los resultados obtenidos de la implementación y ev
 
 ### Matriz de Confusión - Árbol de Decisión  
 Análisis: Excelente clasificación, con solo 3 falsos positivos y ningún falso negativo.  
-![Ilustración 1](Matriz de confusion-Arbol de decision.png)
+![Ilustración 1](Imagenes/Matriz%20de%20confusion-Arbol%20de%20decision.png)
 
 ### Frontera de Decisión - Árbol de Decisión  
 Análisis: Separación clara, aunque con algunas zonas de solapamiento.  
-![Ilustración 2](imagenes/frontera_arbol.png)
+![Ilustración 2](Imagenes/Frontera%20de%20decision-Arbol%20de%20decision.png)
 
 ### Matriz de Confusión - SVM  
 Análisis: Buen rendimiento, con 12 falsos negativos y 15 falsos positivos.  
-![Ilustración 3](imagenes/matriz_confusion_svm.png)
+![Ilustración 3](Imagenes/Matriz%20de%20confusion-SVM.png)
 
 ### Frontera de Decisión - SVM  
 Análisis: Frontera no lineal que mejora la separación entre clases.  
-![Ilustración 4](imagenes/frontera_svm.png)
+![Ilustración 4](Imagenes/Frontera%20de%20decision-SVM.png)
 
 ### Matriz de Confusión - Regresión Logística  
 Análisis: 16 falsos negativos y 11 falsos positivos. Rendimiento aceptable.  
-![Ilustración 5](imagenes/matriz_confusion_reglog.png)
+![Ilustración 5](Imagenes/Matriz%20de%20confusion-Regresion%20Logistica.png)
 
 ### Frontera de Decisión - Regresión Logística  
 Análisis: Frontera lineal. Clasificación menos precisa en zonas solapadas.  
-![Ilustración 6](imagenes/frontera_reglog.png)
+![Ilustración 6](Imagenes/Frontera%20de%20decision-Regresion%20Logistica.png)
 
 ### Comparación del F1-score por modelo  
 Análisis: Árbol de Decisión tiene el F1-score más alto.  
