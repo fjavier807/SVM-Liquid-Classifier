@@ -1,107 +1,104 @@
+# 🔬 Clasificación Binaria con Sensores de Agua y Aceite
 
-# Clasificación Binaria con Sensores de Agua y Aceite
-
-## 📄 Resumen del Proyecto
-
-Este proyecto tiene como objetivo aplicar y comparar modelos de clasificación para detectar condiciones ambientales a partir de sensores de agua y aceite. Se evaluaron tres enfoques:
-
-- Árbol de Decisión
-- Máquinas de Vectores de Soporte (SVM)
-- Regresión Logística
-
-Las métricas empleadas fueron Precisión, Recall, F1-score y Curva ROC.
+Este proyecto aplica técnicas de aprendizaje automático para clasificar señales de sensores industriales con el objetivo de diferenciar entre muestras de **agua** y **aceite**. Se entrenaron y compararon tres modelos de clasificación: Árbol de Decisión, Regresión Logística y SVM.
 
 ---
 
-## 👨‍🏫 Información General
+## 📁 Índice
 
-- **Materia:** Aprendizaje Automático  
-- **Profesora:** Gladys María Villegas Rugel  
-- **Fecha de entrega:** 03/05/2025  
-- **Integrantes:**
-  - María Fernanda Bolaños Escandón
-  - Francisco Javier Estupiñán Andrade
-  - Fernando Xavier Montaño Cárdenas
+- 📂 Descripción y Estructura del Proyecto  
+- 🔍 Análisis Exploratorio de Datos (EDA)  
+- 📝 Descripción de Variables y Clases  
+- 📊 Matriz de Correlación  
+- ❌ Eliminación de Variables Irrelevantes  
+- ⚙️ Preprocesamiento  
+  - Tratamiento de valores nulos  
+  - Codificación de variables  
+  - Escalado de variables numéricas  
+  - División del dataset  
+- 🤖 Implementación de Clasificadores  
+  - Árbol de Decisión  
+  - SVM  
+  - Regresión Logística  
+- ✅ Comparación de Resultados  
+- 🧑‍💻 Autores  
 
 ---
 
 ## 📊 Metodología
 
-### 🔹 Procesamiento de Datos
-
-- Carga del archivo `dataset.csv` (separador: punto y coma).
-- Normalización de las variables.
-- División 80/20 para entrenamiento y prueba.
-
-### 🔹 Modelos Utilizados
-
-- **Árbol de Decisión:** estructura jerárquica para clasificación.
-- **SVM:** busca la mejor frontera de separación no lineal.
-- **Regresión Logística:** frontera de decisión lineal basada en probabilidad.
-
-### 🔹 Evaluación
-
-- **Métricas:** Precisión, Recall, F1-score, AUC.
-- **Visualizaciones:** Matriz de Confusión, Frontera de Decisión, Curva ROC.
+- Se utilizó un dataset de sensores (`dataset.csv`) separado por punto y coma.
+- Se aplicó normalización de variables.
+- División del conjunto de datos: 80% entrenamiento / 20% prueba.
+- Evaluación mediante métricas estándar y visualización de fronteras de decisión.
 
 ---
 
-## 📈 Resultados
+## 🧠 Modelos de Clasificación
 
 ### Árbol de Decisión
 
 - **Matriz de Confusión**  
-  ![Matriz Árbol](proyecto_clasificacion_binaria/matriz_arbol.png)
+  ![Matriz Árbol](Imagenes/Matriz%20de%20confusion-Arbol%20de%20decision.png)
 
 - **Frontera de Decisión**  
-  ![Frontera Árbol](proyecto_clasificacion_binaria/frontera_arbol.png)
+  ![Frontera Árbol](Imagenes/Frontera%20de%20decision-Arbol%20de%20decision.png)
 
 ---
 
 ### SVM
 
 - **Matriz de Confusión**  
-  ![Matriz SVM](Imagenes/Matriz de confusion-SVM.png)
+  ![Matriz SVM](Imagenes/Matriz%20de%20confusion-SVM.png)
 
 - **Frontera de Decisión**  
-  ![Frontera SVM](Imagenes/Frontera de decision-SVM.png)
+  ![Frontera SVM](Imagenes/Frontera%20de%20decision-SVM.png)
 
 ---
 
 ### Regresión Logística
 
 - **Matriz de Confusión**  
-  ![Matriz Regresión](proyecto_clasificacion_binaria/matriz_regresion.png)
+  ![Matriz Regresión](Imagenes/Matriz%20de%20confusion-Regresion%20Logistica.png)
 
 - **Frontera de Decisión**  
-  ![Frontera Regresión](proyecto_clasificacion_binaria/frontera_regresion.png)
+  ![Frontera Regresión](Imagenes/Frontera%20de%20decision-Regresion%20Logistica.png)
+
+- **Curva ROC**  
+  ![Curva ROC](Imagenes/Curva%20ROC%20-%20Regresion%20Logistica.png)
 
 ---
 
-### Comparación de Modelos
+## 📈 Comparación de Resultados
 
-- **F1-Score por Modelo**  
-  ![F1-score](proyecto_clasificacion_binaria/f1score.png)
+- **Comparación de F1-Score por Modelo**  
+  ![F1-Score](Imagenes/Comparacion%20de%20F1-score%20por%20modelo.png)
 
-- **Curva ROC - Regresión Logística**  
-  ![ROC](proyecto_clasificacion_binaria/roc_regresion.png)
+- **Métricas por Modelo (DataFrame)**  
+  ![Métricas](Imagenes/DATAFRAME%20Resultados%20de%20metricas.png)
 
-- **Métricas Generales**  
-  ![Métricas](proyecto_clasificacion_binaria/metricas_modelos.png)
+- **Resumen de Todas las Métricas**  
+  ![Todas las Métricas](Imagenes/DATAFRAMEcon%20todas%20las%20metricas.png)
 
 ---
 
 ## ✅ Conclusiones
 
-- **SVM** mostró el mejor rendimiento general, especialmente con datos no linealmente separables.
-- **Árbol de Decisión** ofreció alto F1-score y es más interpretable.
-- **Regresión Logística** fue adecuada, pero menos eficaz con solapamientos.
-
-> En resumen, se recomienda el modelo **SVM** como el más robusto para este caso de clasificación binaria.
+- **SVM** obtuvo el mejor desempeño general, destacando en F1-score y área bajo la curva ROC.
+- **Árbol de Decisión** es más interpretable y aún competitivo.
+- **Regresión Logística** tuvo rendimiento razonable, pero fue superado por SVM.
 
 ---
 
-## 📂 Estructura del Repositorio
+## 👨‍💻 Autores
+
+- María Fernanda Bolaños Escandón  
+- Francisco Javier Estupiñán Andrade  
+- Fernando Xavier Montaño Cárdenas  
+
+---
+
+## 📁 Estructura del Repositorio
 
 
 
