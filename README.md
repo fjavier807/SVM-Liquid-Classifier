@@ -71,7 +71,7 @@ Análisis: Frontera lineal. Clasificación menos precisa en zonas solapadas.
 
 ### Comparación del F1-score por modelo  
 Análisis: Árbol de Decisión tiene el F1-score más alto.  
-![Ilustración 7](imagenes/f1_scores.png)
+![Ilustración 7](Imagenes/Comparacion%20de%20F1-score%20por%20modelo.png)
 
 ### Curva ROC - Regresión Logística  
 Análisis: AUC muy cercano a 1. Excelente capacidad de discriminación.  
