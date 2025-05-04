@@ -61,10 +61,10 @@ Las métricas empleadas fueron Precisión, Recall, F1-score y Curva ROC.
 ### SVM
 
 - **Matriz de Confusión**  
-  ![Matriz SVM](proyecto_clasificacion_binaria/matriz_svm.png)
+  ![Matriz SVM](Imagenes/Matriz de confusion-SVM.png)
 
 - **Frontera de Decisión**  
-  ![Frontera SVM](proyecto_clasificacion_binaria/frontera_svm.png)
+  ![Frontera SVM](Imagenes/Frontera de decision-SVM.png)
 
 ---
 
