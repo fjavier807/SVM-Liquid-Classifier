@@ -1,4 +1,4 @@
- # Clasificación de Lecturas de Sensores de Agua y Aceite
+# Clasificación de Lecturas de Sensores de Agua y Aceite
 
 ## Tabla de contenido
 1. [Introducción](#1-introducción)  
@@ -47,7 +47,7 @@ En este informe se presentan los resultados obtenidos de la implementación y ev
 
 ### Matriz de Confusión - Árbol de Decisión  
 Análisis: Excelente clasificación, con solo 3 falsos positivos y ningún falso negativo.  
-![Ilustración 1](imagenes/matriz_confusion_arbol.png)
+![Ilustración 1](Imagenes/matriz_confusion_arbol.png)
 
 ### Frontera de Decisión - Árbol de Decisión  
 Análisis: Separación clara, aunque con algunas zonas de solapamiento.  
@@ -83,6 +83,7 @@ Análisis: Todos los modelos tienen métricas altas. Árbol de Decisión ligeram
 
 ## 5. Conclusiones
 Todos los modelos evaluados resultaron adecuados. SVM se destaca por su rendimiento y manejo de clases no lineales. El Árbol de Decisión también ofrece alta precisión y facilidad de interpretación. La Regresión Logística, aunque algo más limitada, sigue siendo una buena opción cuando las clases son linealmente separables.
+
 
 
 
