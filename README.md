@@ -37,7 +37,7 @@ La estructura del proyecto incluye:
 Durante el EDA se generaron gráficas de distribución, boxplots y estadísticas básicas que revelaron la presencia de valores atípicos y variables redundantes. Se observó una distribución ligeramente desbalanceada entre clases.
 
 ### 📊 Boxplot de Variables
-![Boxplot Variables](resultados/boxplot_variables.png)
+![Boxplot Variables](proyecto_clasificacion_binaria/resultadosboxplot_variables.png)
 
 ---
 
