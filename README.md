@@ -49,7 +49,7 @@ El objetivo es predecir la variable categórica `Clase`, que puede ser:
 - `1`: Aceite
 
 ### 📈 Histograma de Clases
-![Histograma Clases](resultados/histograma_clases.png)
+![Histograma Clases](proyecto_clasificacion_binaria/resultados/histograma_clases.png)
 
 ---
 
@@ -57,7 +57,7 @@ El objetivo es predecir la variable categórica `Clase`, que puede ser:
 
 Se calculó la matriz de correlación para identificar relaciones lineales entre variables y eliminar redundancias que puedan afectar el rendimiento de los modelos.
 
-![Matriz de Correlación](resultados/matriz_correlacion.png)
+![Matriz de Correlación](proyecto_clasificacion_binaria/resultados/matriz_correlacion.png)
 
 ---
 
@@ -103,13 +103,13 @@ Modelo de ensamblado con buen rendimiento general y reducción de sobreajuste.
 Se utilizó la métrica **ROC AUC** y la matriz de confusión para comparar los resultados. Random Forest mostró el mejor rendimiento general.
 
 ### 📉 Curvas ROC
-![Curvas ROC](resultados/curvas_roc.png)
+![Curvas ROC](proyecto_clasificacion_binaria/resultados/curvas_roc.png)
 
 ### 🔲 Matrices de Confusión
-![Matrices de Confusión](resultados/matrices_confusion.png)
+![Matrices de Confusión](proyecto_clasificacion_binaria/resultados/matrices_confusion.png)
 
 ### 🧪 Importancia de Variables (Random Forest)
-![Importancia Variables](resultados/importancia_variables_rf.png)
+![Importancia Variables](proyecto_clasificacion_binaria/resultados/importancia_variables_rf.png)
 
 ---
 
