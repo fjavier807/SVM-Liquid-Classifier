@@ -75,11 +75,11 @@ Análisis: Árbol de Decisión tiene el F1-score más alto.
 
 ### Curva ROC - Regresión Logística  
 Análisis: AUC muy cercano a 1. Excelente capacidad de discriminación.  
-![Ilustración 8](imagenes/roc_reglog.png)
+![Ilustración 8](Imagenes/Curva%20ROC%20-%20Regresion%20Logistica.png)
 
 ### Métricas de los Modelos  
 Análisis: Todos los modelos tienen métricas altas. Árbol de Decisión ligeramente superior.  
-![Ilustración 9](imagenes/metricas_modelos.png)
+![Ilustración 9](Imagenes/DATAFRAMEcon%20todas%20las%20metricas.png)
 
 ## 5. Conclusiones
 Todos los modelos evaluados resultaron adecuados. SVM se destaca por su rendimiento y manejo de clases no lineales. El Árbol de Decisión también ofrece alta precisión y facilidad de interpretación. La Regresión Logística, aunque algo más limitada, sigue siendo una buena opción cuando las clases son linealmente separables.
